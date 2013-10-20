@@ -1,0 +1,53 @@
+---
+title       : GENERACION DE NUMEROS ALEATORIOS NORMALES
+subtitle    : Transformacion de Box-Muller
+author      : Carlos LESMES
+job         : Curso de simulacion
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+github:
+  user: carloslesmes
+  repo: Valkyria
+---
+
+## METODO PARA GENERAR VARIABLES ALEATORIAS NORMALES
+
+Sean X y Y variables aleatorias normales standard. Sean
+
+\[ R^{2}=X^{2}+Y^{2} \]
+
+\[ tan \theta =\frac{Y}{X}\]
+
+Como X y Y son independientes , su densidad conjunta esta dada por:
+
+\[ f(x,y)=\displaystyle\frac{1}{\sqrt{2\pi}}e^{-\frac{x^{2}}{2}} \displaystyle\frac{1}{\sqrt{2\pi}}e^{-\frac{y^{2}}{2}}   \]
+
+
+------
+Si
+\[ X=R \cos \theta  \]
+\[ Y=R \sin \theta \]
+
+se puede comprobar que $R^{2}$ y $\theta$ son independientes y que $R^{2}$ tiene distribucion exponencial y $\theta $ distribucion uniforme en $ (0, 2\pi )$ y se pueden generar las variables normales X y Y a partir de las uniformes unitarias $U_{1}$ y $U_{2}$.
+
+\[ X=\displaystyle \sqrt{-2 \log U_{1}}\cos(2\pi \, U_{2})   \]
+
+\[ Y=\displaystyle \sqrt{-2 \log U_{1}}\sin(2\pi \, U_{2})   \]
+
+---  
+
+## CODIGO R
+
+```{r echo=TRUE,prompt=TRUE,eval=FALSE}
+m=50000
+u1 <- runif(m)
+u2 <- runif(m)
+z1=sqrt(-2*log(u1))*cos(2*pi*u2)
+z2=sqrt(-2*log(u1))*sin(2*pi*u2)
+par(mfrow=c(1,2))
+hist(z1,col="greenyellow",freq=FALSE,main="Histograma de z1")
+hist(z2,col="purple",freq=FALSE,main="Histograma de z2")
+```
