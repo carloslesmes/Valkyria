@@ -1,3 +1,3 @@
 Valkyria
 ========
-Slidify examples
+Random
