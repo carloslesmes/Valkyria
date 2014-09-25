@@ -1,0 +1,63 @@
+
+\documentclass[10pt]{exam}
+\usepackage{color}
+\usepackage{draftcopy}
+\usepackage{graphicx}
+\usepackage[spanish,activeacute]{babel}
+\pagestyle{headandfoot}
+\extraheadheight{1in}
+\draftcopyName{FACULTAD DE ESTADISTICA}{50}
+\begin{document}
+%\begin{figure}
+%\includegraphics[bb = 0 0 7 63, width = 1.3mm]{logoUSTA.jpg}
+%\end{figure}
+\headrule
+\footrule
+\header{\bfseries \Large Universidad Santo Tom\'{a}s \\ Facultad de Estad\'istica \\ Estad\'istica I}{}{\bfseries \Large Examen final \\ Estad\'{i}stica Descriptiva \\ \today}
+\footer{\bfseries \large Profesor \\ Carlos Lesmes L.}{\bfseries Este examen tiene  \numquestions \, preguntas}{\bfseries P\'agina \thepage \quad de \numpages}
+\makebox[\textwidth]{\bfseries \Large Nombre:\enspace\hrulefill}
+\vspace{0.2in}
+\begin{questions} 
+\pointsinrightmargin
+\question
+La siguiente es la distribuci\'{o}n de la duraci'on de bombillos, en horas:\\
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{|c|c|}
+\hline 
+Duraci'on (horas ) & N\'{u}mero de bombillos \\ 
+\hline 
+100 - 200 & 55 \\ 
+\hline 
+200 - 300 & 66 \\ 
+\hline 
+300 - 400 &  77\\ 
+\hline 
+400 - 500 &  44\\ 
+\hline 
+500 - 600 &  33\\ 
+\hline 
+\end{tabular} 
+\end{center}
+\end{table}\\
+Calcular e interpretar:
+\begin{parts}
+	\part[0.5] media aritm'etica
+	\part[0.5] desviaci'on est'andar muestral
+	\part[0.5] media geom'etrica
+	\part[0.5] media arm'onica
+	\part[0.5] coeficiente de asimetr'ia.
+	\part[0.5] coeficiente de curtosis.
+	\part[0.5] ?`Cu'al es la duraci'on m'inima del 21\% de los bombillos que m'as duran?
+	\part[0.5] ?`Cu'antos bombillos duran menos de 280 horas?	
+	
+	Si la duraci'on de los bombillos se aumenta en 50 horas, \textquestiondown Cu'ales son los nuevos
+	\part[0.5] coeficiente de asimetr'ia.
+	\part[0.5] coeficiente de variaci'on.
+	
+\end{parts}
+
+\vspace{1cm}
+\fbox{\parbox{5.5in}{\centering Tiempo m\'aximo 90 minutos}}
+\end{questions}
+\end{document}
