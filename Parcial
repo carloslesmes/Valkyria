@@ -1,4 +1,7 @@
-
+% In your .tex file
+% !TEX program = xelatex
+# In .latex.yml
+compiler: latex
 \documentclass[10pt]{exam}
 \usepackage{color}
 \usepackage{draftcopy}
