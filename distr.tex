@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt]{report}
 \usepackage[utf8]{inputenc}
 %\usepackage[spanish,activeacute]{babel}
 \usepackage{amsmath}
@@ -16,7 +16,8 @@
 \begin{landscape}
 \begin{tabular}{|c|c|c|c|c|c|c|}
 \hline 
-\parbox[c][2\height][c]{1.2in}{NOMBRE} & \parbox[c][2\height][c]{1.2in}{PARAMETROS} & \parbox[c][2\height][c]{1.3in}{f.d.p. \\ $ f(x) $}  & \parbox[c][2\height][c]{0.8in}{MEDIA \\$ \mu=E[X] $} & \parbox[c][2\height][c]{1in}{ VARIANZA \\$ E[(X-\mu)^{2}] $}& \parbox[c][2\height][c]{0.8in}{ f.g.p. \\$ E[z^{X}]=$\\$X(z)$} & \parbox[c][2\height][c]{1in}{f.g.m. \\$ E[e^{tX}]=$\\$m_{X}(t)$}\\ 
+\parbox[c][2\height][c]{1.2in}{NOMBRE} & \parbox[c][2\height][c]{1.2in}{PARAMETROS} & \parbox[c][2\height][c]{1.3in}{f.d.p. \\ $ f(x) $}  & \parbox[c][2\height][c]{0.8in}{MEDIA \\$ \mu=E[X] $} & \parbox[c][2\height][c]{1in}{ VARIANZA \\$ E[(X-\mu)^{2}] $}& \parbox[c][2\height][c]{0.8in}{ f.g.p. \\$
+E[z^{X}]=$\\$X(z)$} & \parbox[c][2\height][c]{1in}{f.g.m. \\$ E[e^{tX}]=$\\$m_{X}(t)$}\\ 
 \hline 
 \parbox[c][2\height][c]{1.2in}{BINOMIAL} & \parbox[c][2\height][c]{1.2in}{$ n=1,2,\dots $\\$ 0 < p < 1 $\\$ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle \binom{n}{x}p^{x}q^{n-x} $\\$ x=0,1,2,\dots,n $} &  $ np $ & $ npq $ & $ (q+zp)^{n}$ & $ (q+pe^{t})^{n} $\\ 
 \hline 
@@ -24,7 +25,7 @@
 \hline 
 \parbox[c][2\height][c]{1.2in}{GEOMETRICA} & \parbox[c][2\height][c]{1.2in}{$ 0< p < 1 $\\$ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{ $ p\, q^{x} $ \\ $ x=0,1,2,\dots $}  & $ \displaystyle \frac{q}{p} $& $ \displaystyle \frac{q}{p^{2}} $ & $ \displaystyle \frac{zp}{1-zp} $ & $ \displaystyle \frac{p}{1-qe^{t}} $\\ 
 \hline 
-\parbox[c][2\height][c]{1.2in}{BINOMIAL\\ NEGATIVA} & \parbox[c][2\height][c]{1.2in}{ $ 0< p \leq 1 $ \\ $ r=1,2,\dots $\\ $ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle \binom{x-1}{r-1}\,p^{r}\, q^{x-r} $ \\ $ x=r,r+1,\dots $} & $ \displaystyle \frac{rq}{p} $ & $ \displaystyle \frac{rq}{p^{2}} $ & $ \left( \displaystyle \frac{zp}{1-zq} \right) ^{r} $ & $ \left(\displaystyle \frac{p}{1-pe^{t}}\right)^{r} $\\ 
+\parbox[c][2\height][c]{1.2in}{BINOMIAL\\ NEGATIVA} & \parbox[c][2\height][c]{1.2in}{ $ 0< p \leq 1 $ \\ $ r=1,2,\dots $\\ $ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle \binom{x-1}{r-1}\,p^{r}\, q^{x-r} $ \\ $ x=r,r+1,\dots $} & $ \displaystyle \frac{rq}{p} $ & $ \displaystyle \frac{rq}{p^{2}} $ & $ \left( \displaystyle \frac{zp}{1-zq} \right) ^{r} $ & $ \left(\displaystyle \frac{pe^{t}}{1-pe^{t}}\right)^{r} $\\ 
 \hline 
 \end{tabular} 
 \end{landscape}
@@ -37,12 +38,13 @@
 \hline 
 \parbox[c][2\height][c]{1.2in}{NOMBRE} & \parbox[c][2\height][c]{1.2in}{PARAMETROS} & \parbox[c][2\height][c]{1.3in}{f.d.p. \\ $ f(x) $}  & \parbox[c][2\height][c]{0.8in}{MEDIA \\$ \mu=E[X] $} & \parbox[c][2\height][c]{1in}{ VARIANZA \\$ E[(X-\mu)^{2}] $}& \parbox[c][2\height][c]{0.8in}{ f.g.p. \\$ E[z^{X}]=$\\$X(z)$} & \parbox[c][2\height][c]{1in}{f.g.m. \\$ E[e^{tX}]=$\\$m_{X}(t)$}\\ 
 \hline 
-\parbox[c][2\height][c]{1.2in}{GEOMETRICA} & \parbox[c][2\height][c]{1.2in}{$ 0< p < 1 $\\$ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{ $ p\, q^{x} $ \\ $ x=0,1,2,\dots $}  & $ \displaystyle \frac{q}{p} $& $ \displaystyle \frac{q}{p^{2}} $ & $ \displaystyle \frac{zp}{1-zp} $ & $ \displaystyle \frac{p}{1-qe^{t}} $\\ 
-\hline 
-\parbox[c][2\height][c]{1.2in}{BINOMIAL\\ NEGATIVA} & \parbox[c][2\height][c]{1.2in}{ $ 0< p \leq 1 $ \\ $ r=1,2,\dots $\\ $ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle \binom{x-1}{r-1}\,p^{r}\, q^{x-r} $ \\ $ x=r,r+1,\dots $} & $ \displaystyle \frac{rq}{p} $ & $ \displaystyle \frac{rq}{p^{2}} $ & $ \left( \displaystyle \frac{zp}{1-zq} \right) ^{r} $ & $ \left(\displaystyle \frac{p}{1-pe^{t}}\right)^{r} $\\ 
-\hline 
 \parbox[c][2\height][c]{1.2in}{HIPER-\\GEOMETRICA} & \parbox[c][2\height][c]{1.2in}{ $ M>0 $\\$ 0<k,n<M $} & \parbox[c][2\height][c]{1.3in}{$ \frac{\displaystyle \binom{k}{x}\,\binom{M-k}{n-x} }{\displaystyle\binom{M}{n}}$ \\ $ x= $\\$max\left(0,n+k-M\right),$\\ \dots, $min\left(n,k\right)$} & $ \displaystyle n\frac{k}{M} $ & $ \displaystyle n\frac{k}{M}\,\frac{M-k}{M}\,\frac{M-n}{M-1} $ & $  $ & $  $\\
 \hline 
+\parbox[c][2\height][c]{1.2in}{GEOMETRICA} & \parbox[c][2\height][c]{1.2in}{$ 0< p < 1 $\\$ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{ $ p\, q^{x-1} $ \\ $ x=1,2,\dots $}  & $ \displaystyle \frac{1}{p} $& $ \displaystyle \frac{q}{p^{2}} $ & $ \displaystyle \frac{zp}{1-zp} $ & $ \displaystyle \frac{pe^{t}}{1-qe^{t}} $\\ 
+\hline 
+\parbox[c][2\height][c]{1.2in}{BINOMIAL\\ NEGATIVA} & \parbox[c][2\height][c]{1.2in}{ $ 0< p \leq 1 $ \\ $ r=1,2,\dots $\\ $ p+q=1 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle \binom{x+r-1}{r-1}\,p^{r}\, q^{x} $ \\ $ x=0,1,2,\dots $} & $ \displaystyle \frac{rq}{p} $ & $ \displaystyle \frac{rq}{p^{2}} $ & $ \left( \displaystyle \frac{p}{1-zq} \right) ^{r} $ & $ \left(\displaystyle \frac{p}{1-pe^{t}}\right)^{r} $\\ 
+\hline
+
 \end{tabular} 
 \end{landscape}
 
@@ -58,7 +60,7 @@
 \hline 
 \parbox[c][2\height][c]{1.2in}{EXPONENCIAL }& \parbox[c][2\height][c]{1in}{$ \lambda > 0 $} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle f(x)=\lambda \, e^{-\lambda x} $ \\ $ x \geq 0 $} & $ \displaystyle\frac{1}{\lambda} $ & $ \displaystyle\frac{1}{\lambda^{2}} $ & $ \displaystyle \frac{\lambda}{\lambda-t}; t<\lambda$ \\ 
 \hline 
-\parbox[c][1.5\height][c]{1.2in}{NORMAL} & \parbox[c][1.5\height][c]{1in}{$ \mu, \sigma^{2} $ \\ $ \sigma >0$ \\$ -\infty<\mu <\infty  $} & \parbox[c][1.5\height][c]{1.3in}{  $\displaystyle \frac{1}{\sqrt{2\pi}\sigma} \, e^{- \displaystyle \frac{(x-\mu)^{2}}{2\sigma^{2}}} $ \\ $  x \in \mathbb{R}  $} & $\mu $ & $ \sigma^{2} $ & $ \displaystyle e\,^ {\displaystyle \mu t +\displaystyle \frac{1}{2}\sigma^{2}t^{2}}$\\ 
+\parbox[c][1.5\height][c]{1.2in}{NORMAL} & \parbox[c][1.5\height][c]{1in}{$ \mu, \sigma^{2} $ \\ $ \sigma >0$ \\$ -\infty<\mu <\infty  $} & \parbox[c][1.5\height][c]{1.3in}{  $\displaystyle \frac{1}{\sqrt{2\pi\sigma^{2}}} \, e^{- \displaystyle \frac{(x-\mu)^{2}}{2\sigma^{2}}} $ \\ $  x \in \mathbb{R}  $} & $\mu $ & $ \sigma^{2} $ & $ \displaystyle e\,^ {\displaystyle \mu t +\displaystyle \frac{1}{2}\sigma^{2}t^{2}}$\\ 
 \hline 
 \parbox[c][2\height][c]{1.2in}{PARETO} & \parbox[c][2\height][c]{1in}{$ k,\gamma >0$} & \parbox[c][2\height][c]{1.3in}{$ \displaystyle f(x)=\frac{\gamma k^{\gamma}}{x^{\gamma +1}} $ \\ $ x \geq k $} & $ \displaystyle \frac{k\gamma}{\gamma -1} $ & $ \displaystyle \frac{rq}{p^{2}} $ &  no existe \\ 
 \hline 
@@ -70,3 +72,5 @@ L\raisebox{.5ex}{E}S\raisebox{-.5ex}{M}E\raisebox{.5ex}{S}
 \end{flushright}
 \end{landscape}
 \end{document}
+
+
