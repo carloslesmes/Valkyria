@@ -1,0 +1,17 @@
+library(shiny)
+shinyUI(
+    fluidPage(titlePanel("Distribución  de Weibull"),
+              sidebarLayout(
+                  sidebarPanel(
+                      selectInput("sel", label = h3("Seleccione color"), 
+                                  choices = list("rojo" = "red", "azul" = "blue", "amarillo" = "yellow") ),
+                      numericInput("num", label = h3("Ancho de línea"), value = 1 ), 
+                      sliderInput("a", label = h4("Alfa:"), min = 0.5, max = 5,
+                                  value = 0.5, step = 0.5),
+                      sliderInput("b", label = h4("Beta:"), min = 0.5, max = 5,
+                                  value = 0.5, step = 0.5)),
+                  mainPanel(plotOutput("distPlot")
+                            
+                            ))
+    )
+)
