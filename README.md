@@ -1,3 +1,3 @@
 Valkyria
 ========
-Ensayos de github y sharelatex 
+Archivos de Pluto de Julia Language y ayudas
